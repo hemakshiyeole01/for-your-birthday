@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Happy Birthday!</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="balloonLayer"></div>
+
+<!-- ENTRY SCREEN -->
+<section id="entryScreen" class="entry-screen">
+  <div class="entry-box">
+    <div class="eyebrow">psst...</div>
+    <h1 class="entry-title">Who's today's star? 🎈</h1>
+    <form id="nameForm" class="name-form">
+      <input id="nameInput" type="text" placeholder="Name here" maxlength="30" autocomplete="off" required />
+      <button type="submit" class="go-btn">Let's go 🎉</button>
+    </form>
+  </div>
+</section>
+
+<!-- BOOM TRANSITION -->
+<section id="boomScreen" class="boom-screen">
+  <div class="boom-text" id="boomText">HAPPY BIRTHDAY!</div>
+</section>
+
+<!-- MAIN CELEBRATION -->
+<main id="mainScreen" class="wrap">
+  <div class="eyebrow">A little something for you</div>
+  <h1 class="headline">Happy Birthday,<br><span class="name" id="nameDisplay">Friend</span> 🎉</h1>
+  <p class="sub">Wishing you a day as ridiculous, joyful, and extra as you are. Scroll down — there's a cake to blow out.</p>
+
+  <div class="card">
+    <h2>🎂 Make a wish</h2>
+    <div class="hint">Click each candle to blow it out</div>
+    <div class="cake-zone">
+      <div class="cake">
+        <div class="candles" id="candles">
+          <button class="candle" data-i="0"><span class="flame"></span><span class="smoke"></span></button>
+          <button class="candle" data-i="1"><span class="flame"></span><span class="smoke"></span></button>
+          <button class="candle" data-i="2"><span class="flame"></span><span class="smoke"></span></button>
+        </div>
+        <div class="tier top"></div>
+        <div class="drip"></div>
+        <div class="tier bottom"></div>
+        <div class="plate"></div>
+      </div>
+      <div class="cake-msg" id="cakeMsg"></div>
+      <button class="relight" id="relightBtn">🔥 relight candles</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>😂 Tap for a laugh</h2>
+    <div class="hint">Flip each card — terrible birthday jokes inside</div>
+    <div class="joke-grid" id="jokeGrid"></div>
+  </div>
+
+  <div class="card">
+    <h2>💌 For the year ahead</h2>
+    <div class="message-box" id="messageBox">
+      Here's to another year of you being exactly who you are — a little chaotic, endlessly kind, and somehow the best part of everyone's day without even trying. May this year bring you fewer Monday mornings that feel like Mondays, more moments that make you laugh until it hurts, and every single thing you've been quietly hoping for. Grateful I get a front-row seat to it all. Happy birthday.
+    </div>
+  </div>
+
+  <div class="confetti-btn-row">
+    <button class="confetti-btn" id="confettiBtn">🎊 Hit me with confetti</button>
+  </div>
+
+  <footer>made with love, one bad joke at a time</footer>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
