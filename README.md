@@ -36,3 +36,4 @@ script.js    — interactivity (entry flow, candles, confetti, jokes)
 - **Jokes**: edit the `jokes` array in `script.js`
 - **Closing message**: edit the text inside `.message-box` in `index.html`
 - **Colors**: edit the CSS variables at the top of `style.css`
+
